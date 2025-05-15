@@ -1,17 +1,18 @@
-# Fibonacci Sequence Generator
-
-def fibonacci(n):
-    fib_sequence = [0, 1]  # Starting values for the Fibonacci sequence
-    while len(fib_sequence) < n:
-        next_number = fib_sequence[-1] + fib_sequence[-2]
-        fib_sequence.append(next_number)
-    return fib_sequence
-
-# Input: Number of Fibonacci numbers you want
-n = int(input("Enter the number of Fibonacci numbers you want: "))
-
-# Output: Fibonacci sequence up to 'n' numbers
-fib_sequence = fibonacci(n)
-print(f"The first {n} numbers of the Fibonacci sequence are: {fib_sequence}")
+num = 15
+if num > 10:
+    print("Number is greater than 10")
+else:
+    print("Number is less than or equal to 10") 
+    #Next we see the use of Variables and lists
+# Variables and Lists   
+being_grownup = ["responsibility", "independence", "decision-making", "accountability"]
+print("Being a grown-up means having the following qualities:")
+for quality in being_grownup:
+    print(quality)
+# Next we see the use of Functions
+# Functions
+def greet(name):
+    return f"Hello, {name}!"
+print(greet("Alice"))
 
     

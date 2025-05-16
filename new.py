@@ -17,26 +17,22 @@
 name = any
 answer = any
 age = any
-id_number = any
-username = any
+id_number = 648771825
+username = "billyonze"
 service = any
 rosponses = any
-print("Please enter your name")
-name= str(input())
-print("Welcome", name) 
-print("Kindly register yourself by entering your ID Number")
-id_number = int(input())
+name=input("Please enter your name:")
+print(f"Welcome {name}") 
+id_number = int(input("Kindly register yourself by entering your ID Number:"))
 if id_number == id_number:
-       print("Welcome", name)
+       print(f"Welcome {name}")
 else:
        print("Kindly put in the right information asked for")
-       print("Please enter your ID Number")
-       id_number = int(input())
-print("Please enter your username")
-username = input()
+       id_number = int(input("Please enter your ID Number:"))
+username = input("Please enter your username:")
 if username == username:
-       print(username,"Welcome to Our website")
-       print("are you here to vote")
+       print(f"{username} Welcome to Our website")
+       print("Are you here to vote?")
 answer = input()
 if answer == "yes":
                print("Please enter your age")
@@ -44,8 +40,7 @@ elif answer == "no":
                 print("Kindly state the service you are looking for")
                 service = str(input())  
                 if service == "vote":
-                    print("Please enter your age")
-                    age = int(input())
+                    age = int(input("Please enter your age:"))
                     if age > 18:
                         print("You are ledgible to vote")
                     elif age == 18:
@@ -55,9 +50,8 @@ elif answer == "no":
                 elif service == "other":
                         print("Ask the clerk for any other services you need. Thank you for your time")
                 else :print("Specify the service you are looking for")
-if answer == "yes":
-    print("Please enter your age")      
-    age = int(input())
+if answer == "yes":    
+    age = int(input("Please enter your age"))
     if age > 18:
         print("You are ledgible to vote")
     elif age == 18:
